@@ -22,6 +22,7 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 			<Visible>false</Visible>
 		</Content>
+		<Content Remove="images\**" />
 	</ItemGroup>
 
 	<PropertyGroup>
@@ -50,5 +51,15 @@
 			<HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="obj\**" />
+	  <Compile Remove="images\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="obj\**" />
+	  <EmbeddedResource Remove="images\**" />
 	</ItemGroup>
 </Project>
