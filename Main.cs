@@ -22,7 +22,7 @@ using Dalamud.Game.ClientState.Objects.Enums;
 using Dalamud.Interface.Windowing;
 using Lumina.Excel.Sheets;
 
-namespace ChatBubbles
+namespace ChatBubblesPvP
 {
     internal class UiColorComparer : IEqualityComparer<UIColor>
     {
@@ -36,9 +36,9 @@ namespace ChatBubbles
         }
     }
 
-    public unsafe partial class ChatBubbles : IDalamudPlugin
+    public unsafe partial class ChatBubblesPvP : IDalamudPlugin
     {
-        public string Name => "Chat Bubbles";
+        public string Name => "Chat Bubbles PvP";
         private readonly List<UIColor> _uiColours;
         private readonly Config _configuration;
         private bool _picker;
@@ -172,7 +172,7 @@ namespace ChatBubbles
         private delegate IntPtr OpenBubble(IntPtr self, IntPtr actor, IntPtr textPtr, bool notSure, int attachmentPointID);
         private readonly Hook<OpenBubble> _openBubbleFuncHook;
         
-        public ChatBubbles(IDalamudPluginInterface pluginInt)
+        public ChatBubblesPvP(IDalamudPluginInterface pluginInt)
         {
             pluginInt.Create<Services>();
  

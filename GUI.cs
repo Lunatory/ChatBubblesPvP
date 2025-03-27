@@ -6,9 +6,9 @@ using System.Diagnostics;
 using Num = System.Numerics;
 
 
-namespace ChatBubbles
+namespace ChatBubblesPvP
 {
-    public unsafe partial class ChatBubbles : IDalamudPlugin
+    public unsafe partial class ChatBubblesPvP : IDalamudPlugin
     {
         
         private void BubbleConfigUi()

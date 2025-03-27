@@ -9,9 +9,9 @@ using System.Linq;
 using Dalamud.Logging;
 using Num = System.Numerics;
 
-namespace ChatBubbles
+namespace ChatBubblesPvP
 {
-    public unsafe partial class ChatBubbles : IDalamudPlugin
+    public unsafe partial class ChatBubblesPvP : IDalamudPlugin
     {
         // What to do with chat messages
         private void Chat_OnChatMessage(XivChatType type, int senderId, ref SeString sender, ref SeString cmessage, ref bool isHandled)

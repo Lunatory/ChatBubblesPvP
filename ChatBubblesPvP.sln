@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatBubbles", "ChatBubbles.csproj", "{BB289F2C-930C-4959-910E-992B2228E550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatBubblesPvP", "ChatBubblesPvP.csproj", "{BB289F2C-930C-4959-910E-992B2228E550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

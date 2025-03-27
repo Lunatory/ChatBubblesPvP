@@ -5,9 +5,9 @@ using Dalamud.Logging;
 using Num = System.Numerics;
 using Dalamud.Plugin.Services;
 
-namespace ChatBubbles
+namespace ChatBubblesPvP
 {
-    public unsafe partial class ChatBubbles : IDalamudPlugin
+    public unsafe partial class ChatBubblesPvP : IDalamudPlugin
     {
 
         private void OnceUponAFrame(IFramework framework)
