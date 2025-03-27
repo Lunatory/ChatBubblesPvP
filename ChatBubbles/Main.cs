@@ -419,7 +419,7 @@ namespace ChatBubbles
 
                 foreach (var cd in _charDatas.Where(cd => actorId == cd.ActorId))
                 {
-                    if (bubble->State == BalloonState.Inactive && _switch && !Services.ClientState.IsPvP)
+                    if (bubble->State == BalloonState.Inactive && _switch)
                     {
 
                         //Get the slot that will turn into the bubble
@@ -518,9 +518,6 @@ namespace ChatBubbles
 
                 if (cd.Message?.TextValue.Length > 0)
                 {
-                    if(cd.Message.TextValue.Contains("fart"))
-                        newAttachmentPointID = 63;
-
                     var bytes = cd.Message.Encode();
                     var newPointer = Marshal.AllocHGlobal(bytes.Length + 1);
                     Marshal.Copy(bytes, 0, newPointer, bytes.Length);
