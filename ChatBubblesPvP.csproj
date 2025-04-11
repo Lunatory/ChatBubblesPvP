@@ -7,14 +7,10 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<Version>2.1.7.3</Version>
 		<Configurations>Release;Debug</Configurations>
-		<Platforms>x64</Platforms>
+		<Platforms>AnyCPU</Platforms>
 		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-	</PropertyGroup>
-
-	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-		<Optimize>false</Optimize>
 	</PropertyGroup>
 
 	<ItemGroup>
